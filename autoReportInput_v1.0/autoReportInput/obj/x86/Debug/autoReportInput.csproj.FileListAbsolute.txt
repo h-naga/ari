@@ -1,0 +1,15 @@
+c:\users\h-nagashima\documents\visual studio 2010\Projects\autoReportInput\autoReportInput\bin\Debug\autoReportInput.exe
+c:\users\h-nagashima\documents\visual studio 2010\Projects\autoReportInput\autoReportInput\bin\Debug\autoReportInput.pdb
+c:\users\h-nagashima\documents\visual studio 2010\Projects\autoReportInput\autoReportInput\obj\x86\Debug\autoReportInput.Form1.resources
+c:\users\h-nagashima\documents\visual studio 2010\Projects\autoReportInput\autoReportInput\obj\x86\Debug\autoReportInput.Properties.Resources.resources
+c:\users\h-nagashima\documents\visual studio 2010\Projects\autoReportInput\autoReportInput\obj\x86\Debug\autoReportInput.csproj.GenerateResource.Cache
+c:\users\h-nagashima\documents\visual studio 2010\Projects\autoReportInput\autoReportInput\obj\x86\Debug\autoReportInput.exe
+c:\users\h-nagashima\documents\visual studio 2010\Projects\autoReportInput\autoReportInput\obj\x86\Debug\autoReportInput.pdb
+C:\Users\h-nagashima\Documents\Visual Studio 2010\Projects\autoReportInput_v1.0\autoReportInput\obj\x86\Debug\autoReportInput.exe
+C:\Users\h-nagashima\Documents\Visual Studio 2010\Projects\autoReportInput_v1.0\autoReportInput\obj\x86\Debug\autoReportInput.pdb
+C:\Users\h-nagashima\Documents\Visual Studio 2010\Projects\autoReportInput_v1.0\autoReportInput\bin\Debug\autoReportInput.exe
+C:\Users\h-nagashima\Documents\Visual Studio 2010\Projects\autoReportInput_v1.0\autoReportInput\bin\Debug\autoReportInput.pdb
+C:\Users\h-nagashima\Documents\Visual Studio 2010\Projects\autoReportInput_v1.0\autoReportInput\obj\x86\Debug\autoReportInput.Form1.resources
+C:\Users\h-nagashima\Documents\Visual Studio 2010\Projects\autoReportInput_v1.0\autoReportInput\obj\x86\Debug\autoReportInput.Properties.Resources.resources
+C:\Users\h-nagashima\Documents\Visual Studio 2010\Projects\autoReportInput_v1.0\autoReportInput\obj\x86\Debug\autoReportInput.csproj.GenerateResource.Cache
+C:\Users\h-nagashima\Documents\Visual Studio 2010\Projects\autoReportInput_v1.0\autoReportInput\obj\x86\Debug\autoReportInput.csprojResolveAssemblyReference.cache
