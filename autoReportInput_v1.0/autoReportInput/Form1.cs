@@ -20,6 +20,8 @@ namespace autoReportInput
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            radioButton1.Checked = true;
+            
             //フォームサイズの変更に合わせてボタンアンカーを設定
             //button1.Anchor = (AnchorStyles.Bottom | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Left);
         }
@@ -138,10 +140,23 @@ namespace autoReportInput
             textBox4.Enabled = !textBox4.Enabled;
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            //数値文字列チェック
+            textBox3.Enabled = !textBox3.Enabled;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             //運転時間チェック
             textBox5.Enabled = !textBox5.Enabled;
+            textBox6.Enabled = !textBox6.Enabled;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            //複数行チェック
+            textBox7.Enabled = !textBox7.Enabled;
         }
 
     }
