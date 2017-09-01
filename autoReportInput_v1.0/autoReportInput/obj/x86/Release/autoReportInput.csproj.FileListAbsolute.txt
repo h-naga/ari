@@ -16,3 +16,8 @@ C:\Git_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoRepo
 C:\Git_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.pdb
 C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.exe
 C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.pdb
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\bin\Release\autoReportInput.exe
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\bin\Release\autoReportInput.pdb
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.Form1.resources
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.Properties.Resources.resources
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.csproj.GenerateResource.Cache
