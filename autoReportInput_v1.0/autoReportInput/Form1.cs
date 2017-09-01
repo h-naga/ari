@@ -11,11 +11,17 @@ namespace autoReportInput
 {
     public partial class Form1 : Form
     {
-        bool time_flag = false;
+        //bool time_flag = false;
 
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //フォームサイズの変更に合わせてボタンアンカーを設定
+            //button1.Anchor = (AnchorStyles.Bottom | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Left);
         }
 
         //表示文字更新
@@ -28,7 +34,7 @@ namespace autoReportInput
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
             //初期化
-            time_flag = false;
+            //time_flag = false;
 
             //未入力検出
             if ((textBox1.Text == "" | textBox2.Text == "" | textBox3.Text == "") || 
@@ -39,7 +45,7 @@ namespace autoReportInput
                 return;
             }
 
-            //時間検出
+            //運転時間検出
             //if (textBox3.Text.IndexOf(":") != -1 || textBox3.Text.IndexOf("：") != -1)
             //{
             //    //5文字かつ真ん中にコロンでなければ不正
@@ -137,5 +143,6 @@ namespace autoReportInput
             //運転時間チェック
             textBox5.Enabled = !textBox5.Enabled;
         }
+
     }
 }
