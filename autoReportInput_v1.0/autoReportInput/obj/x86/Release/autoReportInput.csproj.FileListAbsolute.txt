@@ -14,3 +14,11 @@ C:\Users\h-nagashima\Documents\Visual Studio 2010\Projects\autoReportInput_v1.0\
 C:\Users\h-nagashima\Documents\Visual Studio 2010\Projects\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.csproj.GenerateResource.Cache
 C:\Git_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.exe
 C:\Git_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.pdb
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.exe
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.pdb
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\bin\Release\autoReportInput.exe
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\bin\Release\autoReportInput.pdb
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.Form1.resources
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.Properties.Resources.resources
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.csproj.GenerateResource.Cache
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.csprojResolveAssemblyReference.cache
