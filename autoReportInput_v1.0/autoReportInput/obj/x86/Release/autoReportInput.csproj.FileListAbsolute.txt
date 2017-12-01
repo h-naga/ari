@@ -21,3 +21,4 @@ C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\bin\Release\autoRepor
 C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.Form1.resources
 C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.Properties.Resources.resources
 C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.csproj.GenerateResource.Cache
+C:\GitHub_Project\ari\autoReportInput_v1.0\autoReportInput\obj\x86\Release\autoReportInput.csprojResolveAssemblyReference.cache

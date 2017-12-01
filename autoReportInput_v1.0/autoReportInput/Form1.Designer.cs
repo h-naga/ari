@@ -40,17 +40,18 @@
             this.drivingTimeText2 = new System.Windows.Forms.TextBox();
             this.drivingTimeText1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.mulchStringText = new System.Windows.Forms.TextBox();
             this.numberRadioButton = new System.Windows.Forms.RadioButton();
             this.drivingTimeRadioButton = new System.Windows.Forms.RadioButton();
             this.mulchStringRadioButton = new System.Windows.Forms.RadioButton();
             this.inputFormatGroupBox = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.clearButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.stringText = new System.Windows.Forms.TextBox();
             this.stringRadioButton = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.clearButton = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.inputFormatGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -171,6 +172,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "オプション";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 67);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(124, 12);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "※負の数を入れると加算";
+            // 
             // mulchStringText
             // 
             this.mulchStringText.Enabled = false;
@@ -239,6 +249,34 @@
             this.inputFormatGroupBox.TabStop = false;
             this.inputFormatGroupBox.Text = "③入力形式";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(10, 433);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(172, 24);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "※上のテキストボックスに貼り付け\r\nられた内容が一行ずつ入力されます";
+            // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(132, 152);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(50, 20);
+            this.clearButton.TabIndex = 22;
+            this.clearButton.Text = "クリア";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(120, 105);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 12);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "（0～59）";
+            // 
             // stringText
             // 
             this.stringText.Enabled = false;
@@ -259,48 +297,22 @@
             this.stringRadioButton.UseVisualStyleBackColor = true;
             this.stringRadioButton.CheckedChanged += new System.EventHandler(this.stringRadioButton_CheckedChanged);
             // 
-            // label3
+            // label7
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(120, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 12);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "（0～59）";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 67);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 12);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "※負の数を入れると加算";
-            // 
-            // clearButton
-            // 
-            this.clearButton.Location = new System.Drawing.Point(132, 152);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(50, 20);
-            this.clearButton.TabIndex = 22;
-            this.clearButton.Text = "クリア";
-            this.clearButton.UseVisualStyleBackColor = true;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 433);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(172, 24);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "※上のテキストボックスに貼り付け\r\nられた内容が一行ずつ入力されます";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 290);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(181, 84);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "※上のボタンを押した後、\r\n入力したい箇所をクリックします\r\n①の秒数経過後に入力を開始します\r\n\r\n※入力先のウィンドウでは、\r\nIMEの入力モードを半角英数に" +
+    "\r\nしてから実行して下さい";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 496);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.inputFormatGroupBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
@@ -346,6 +358,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.Label label7;
     }
 }
 
