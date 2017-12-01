@@ -32,6 +32,9 @@ namespace autoReportInput
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             button1.Text = secondSettingText.Text + "秒後、入力開始";
+            //▼複数列対応_20171201  
+            button1_m.Text = secondSettingText_m.Text + "秒後、入力開始";
+            //▲複数列対応_20171201  
         }
 
 
@@ -226,6 +229,105 @@ namespace autoReportInput
             }
         }
 
+        //▼複数列対応_20171201      
+        //入力開始ボタン（複数列）クリック
+        private void button1_m_Click(object sender, EventArgs e)
+       {
+            //未入力検出
+
+            //秒数確認
+            if (secondSettingText_m.Text == "")
+            {
+                MessageBox.Show("未入力項目があります");
+                return;
+            }
+
+            //指定時間待ち
+            System.Threading.Thread.Sleep(int.Parse(secondSettingText_m.Text) * 1000);
+
+            //初期化
+            int tab_pos = 0;    //タブ位置
+            int line_len = 0;   //行の長さ
+            int col_num = 0;    //列数
+            int tab_pre = 0;    //タブ手前位置
+            String line = "";   //行_作業用
+            string send_text = "";
+
+            //複数行列テキスト処理
+            for (int row_n = 0; row_n < textBox3.Lines.Length -1; row_n++)
+            {
+                //行を取得
+                line = textBox3.Lines[row_n];
+                //列数を取得
+                col_num = line.Length - line.Replace("\t", "").Length;
+                
+                //行に対して、スペースで列に分解
+                while (true)
+                {
+                    //行文字列から、タブの位置を探す
+                    tab_pos = line.IndexOf("\t");
+                    line_len = line.Length;
+
+                    //タブ位置の手前まで取得して切り出す。
+                    //文字列なしの場合は何も入力せず次へ
+                    if (tab_pos != 0)
+                    {
+                        //最後列によって処理分け
+                        if (tab_pos == -1)
+                        {
+                            //運転時間以外だと値とタブの間の半角スペースが入るため調整
+                            if (checkBox1.Checked)
+                            {
+                                tab_pre = line.Length;
+                            }
+                            else
+                            {
+                                tab_pre = line.Length - 1;
+                            }
+
+                            //先頭から次の行最後-1までの文字列を送信
+                            send_text = line.Substring(0, tab_pre);
+                            SendKeys.Send(send_text);
+                        }
+                        else
+                        {
+                            //運転時間以外だと値とタブの間の半角スペースが入るため調整
+                            if (checkBox1.Checked)
+                            {
+                                tab_pre = tab_pos;
+                            }
+                            else
+                            {
+                                tab_pre = tab_pos - 1;
+                            }
+
+                            //先頭から次のタブ位置手前までの文字列を送信
+                            send_text = line.Substring(0, tab_pre);
+                            SendKeys.Send(send_text);
+                        }
+                    }
+                    //行を更新（タブ位置の次の文字～最後まで）
+                    line = line.Substring(tab_pos + 1, line_len - tab_pos - 1);
+
+                    if (tab_pos < 0)
+                    {
+                        break;
+                    }
+
+                    SendKeys.Send("{RIGHT}");
+                }
+                //次の行先頭へ
+                SendKeys.Send("{ENTER}");
+
+                for (int k = 0; k < col_num; k++)
+                {
+                    SendKeys.Send("{LEFT}");
+                }
+            }
+        }
+        //▲複数列対応_20171201  
+
+
 
         //////////////////////////////////////////////////////////////////////////////
         //チェック処理
@@ -290,5 +392,13 @@ namespace autoReportInput
             //クリアボタン
             mulchStringText.Text = "";
         }
+
+        //▼複数列対応_20171201
+        private void clearButton_m_Click(object sender, EventArgs e) 
+        { 
+            //クリアボタン
+            textBox3.Text = "";
+        }
+        //▲複数列対応_20171201  
     }
 }

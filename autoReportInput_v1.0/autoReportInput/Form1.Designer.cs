@@ -52,13 +52,27 @@
             this.stringText = new System.Windows.Forms.TextBox();
             this.stringRadioButton = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button1_m = new System.Windows.Forms.Button();
+            this.clearButton_m = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.secondSettingText_m = new System.Windows.Forms.TextBox();
+            this.countSettingText_m = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.inputFormatGroupBox.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(14, 239);
+            this.button1.Location = new System.Drawing.Point(11, 230);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(174, 42);
             this.button1.TabIndex = 0;
@@ -68,7 +82,7 @@
             // 
             // secondSettingText
             // 
-            this.secondSettingText.Location = new System.Drawing.Point(12, 47);
+            this.secondSettingText.Location = new System.Drawing.Point(9, 38);
             this.secondSettingText.Name = "secondSettingText";
             this.secondSettingText.Size = new System.Drawing.Size(174, 19);
             this.secondSettingText.TabIndex = 1;
@@ -77,7 +91,7 @@
             // 
             // countSettingText
             // 
-            this.countSettingText.Location = new System.Drawing.Point(12, 94);
+            this.countSettingText.Location = new System.Drawing.Point(9, 85);
             this.countSettingText.Name = "countSettingText";
             this.countSettingText.Size = new System.Drawing.Size(174, 19);
             this.countSettingText.TabIndex = 2;
@@ -95,7 +109,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 27);
+            this.label1.Location = new System.Drawing.Point(9, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 12);
             this.label1.TabIndex = 4;
@@ -104,7 +118,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 74);
+            this.label2.Location = new System.Drawing.Point(9, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 12);
             this.label2.TabIndex = 5;
@@ -165,7 +179,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.substractionCheckbox);
             this.groupBox1.Controls.Add(this.substractionSettingText);
-            this.groupBox1.Location = new System.Drawing.Point(12, 133);
+            this.groupBox1.Location = new System.Drawing.Point(9, 124);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(174, 94);
             this.groupBox1.TabIndex = 15;
@@ -242,7 +256,7 @@
             this.inputFormatGroupBox.Controls.Add(this.drivingTimeRadioButton);
             this.inputFormatGroupBox.Controls.Add(this.drivingTimeText1);
             this.inputFormatGroupBox.Controls.Add(this.drivingTimeText2);
-            this.inputFormatGroupBox.Location = new System.Drawing.Point(197, 24);
+            this.inputFormatGroupBox.Location = new System.Drawing.Point(194, 15);
             this.inputFormatGroupBox.Name = "inputFormatGroupBox";
             this.inputFormatGroupBox.Size = new System.Drawing.Size(195, 460);
             this.inputFormatGroupBox.TabIndex = 19;
@@ -300,26 +314,138 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 290);
+            this.label7.Location = new System.Drawing.Point(7, 281);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(181, 84);
             this.label7.TabIndex = 20;
             this.label7.Text = "※上のボタンを押した後、\r\n入力したい箇所をクリックします\r\n①の秒数経過後に入力を開始します\r\n\r\n※入力先のウィンドウでは、\r\nIMEの入力モードを半角英数に" +
     "\r\nしてから実行して下さい";
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(0, 2);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(403, 517);
+            this.tabControl1.TabIndex = 21;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.inputFormatGroupBox);
+            this.tabPage1.Controls.Add(this.label7);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.secondSettingText);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.countSettingText);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(395, 491);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "1列入力";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.checkBox1);
+            this.tabPage2.Controls.Add(this.button1_m);
+            this.tabPage2.Controls.Add(this.clearButton_m);
+            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.secondSettingText_m);
+            this.tabPage2.Controls.Add(this.countSettingText_m);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(395, 491);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "複数列入力";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button1_m
+            // 
+            this.button1_m.Location = new System.Drawing.Point(14, 385);
+            this.button1_m.Name = "button1_m";
+            this.button1_m.Size = new System.Drawing.Size(174, 42);
+            this.button1_m.TabIndex = 25;
+            this.button1_m.Text = "*秒後、入力開始";
+            this.button1_m.UseVisualStyleBackColor = true;
+            this.button1_m.Click += new System.EventHandler(this.button1_m_Click);
+            // 
+            // clearButton_m
+            // 
+            this.clearButton_m.Location = new System.Drawing.Point(134, 101);
+            this.clearButton_m.Name = "clearButton_m";
+            this.clearButton_m.Size = new System.Drawing.Size(50, 20);
+            this.clearButton_m.TabIndex = 24;
+            this.clearButton_m.Text = "クリア";
+            this.clearButton_m.UseVisualStyleBackColor = true;
+            this.clearButton_m.Click += new System.EventHandler(this.clearButton_m_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(14, 125);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox3.Size = new System.Drawing.Size(170, 254);
+            this.textBox3.TabIndex = 23;
+            // 
+            // secondSettingText_m
+            // 
+            this.secondSettingText_m.Location = new System.Drawing.Point(10, 29);
+            this.secondSettingText_m.Name = "secondSettingText_m";
+            this.secondSettingText_m.Size = new System.Drawing.Size(174, 19);
+            this.secondSettingText_m.TabIndex = 6;
+            this.secondSettingText_m.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.secondSettingText_m.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.number_KeyPress);
+            // 
+            // countSettingText_m
+            // 
+            this.countSettingText_m.Location = new System.Drawing.Point(10, 76);
+            this.countSettingText_m.Name = "countSettingText_m";
+            this.countSettingText_m.Size = new System.Drawing.Size(174, 19);
+            this.countSettingText_m.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(10, 56);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(106, 12);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "②繰り返し入力回数";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(8, 14);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(118, 12);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "①入力開始までの秒数";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(18, 103);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(72, 16);
+            this.checkBox1.TabIndex = 26;
+            this.checkBox1.Text = "運転時間";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 496);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.inputFormatGroupBox);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.countSettingText);
-            this.Controls.Add(this.secondSettingText);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(401, 520);
+            this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "AutoInput";
@@ -328,8 +454,12 @@
             this.groupBox1.PerformLayout();
             this.inputFormatGroupBox.ResumeLayout(false);
             this.inputFormatGroupBox.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -359,6 +489,17 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button button1_m;
+        private System.Windows.Forms.Button clearButton_m;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox secondSettingText_m;
+        private System.Windows.Forms.TextBox countSettingText_m;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
